@@ -1,0 +1,16 @@
+# Gemini Notebook MCP server from https://github.com/jacob-bd/gemini-notebook-mcp-cli
+# Requires: `uv tool install notebooklm-mcp-cli` and `nlm login`.
+- insert:
+    - id: gemini-notebook-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: gemini-notebook
+        transport: stdio
+        command: !!js '`${process.env.HOME}/.local/bin/notebooklm-mcp`'
+        args: ['--transport', 'stdio']
+        env:
+          NOTEBOOKLM_HL: en
+          NOTEBOOKLM_QUERY_TIMEOUT: '150'
+        # Queries take up to 120 s by default; research/studio waits can be longer.
+        toolCallTimeoutMs: 180000
+        failOnStartupError: true

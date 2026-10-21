@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Gemini Notebook",
+    "description": "Connects Gemini Notebook (NotebookLM) through notebooklm-mcp-cli: notebooks, sources, grounded queries, research, Studio audio/video/slides, notes, sharing, and downloads."
+  }
+}

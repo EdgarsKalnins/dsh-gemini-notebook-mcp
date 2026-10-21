@@ -1,0 +1,12 @@
+{
+  "name": "@local/dsh-gemini-notebook-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Connects the Gemini Notebook (NotebookLM) MCP server from notebooklm-mcp-cli to DSH.",
+  "license": "MIT",
+  "homepage": "https://github.com/jacob-bd/gemini-notebook-mcp-cli",
+  "exports": { "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
+  "files": ["cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
