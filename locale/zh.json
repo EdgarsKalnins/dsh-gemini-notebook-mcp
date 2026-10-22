@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Gemini Notebook",
+    "description": "通过 notebooklm-mcp-cli 连接 Gemini Notebook（NotebookLM）：笔记本、来源、基于来源的问答、研究、Studio 音频/视频/幻灯片、笔记、分享和下载。"
+  }
+}
